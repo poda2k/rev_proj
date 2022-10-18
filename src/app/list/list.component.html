@@ -1,0 +1,20 @@
+<section class="Menu">
+    <div class="row">
+        <div class="col">
+            <h3>{{featuredList.prodName}}</h3>
+            <img [src]="featuredList.prodImage" width="250" height="250">
+            <ng-container *ngIf="featuredList.type == 'featured'">
+            <p> discount {{featuredList.prodPrice*(1-featuredList.prodDiscount) | currency}}</p>
+        </ng-container>    
+            <br>
+           <ng-container *ngIf="featuredList.type == 'featured'"> 
+               <p> old price <del>{{featuredList.prodPrice | currency}}</del></p>
+            </ng-container>
+                <ng-container *ngIf=" featuredList.type == 'recent'" >
+                    <p> price {{featuredList.prodPrice | currency}}</p>
+                </ng-container>
+                <button> purchase </button>
+                
+        </div>
+    </div>
+</section>

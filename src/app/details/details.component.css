@@ -1,0 +1,46 @@
+.col{
+    flex-basis: 32%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;   
+    transition: .5s;
+    width: 300px;
+    text-align: center;
+    margin : 7em auto;
+   
+
+}
+.col:hover{
+    box-shadow: 0 0 20px black;
+    box-sizing: border-box;
+}
+
+.col h3{
+    font-size: 22px;
+    color: #777;
+    margin-bottom: 10px;    
+}
+.col img{
+    border-radius: 20px;
+}
+button{
+width : 200px ;
+margin : 10px;
+height: 40px;
+border-radius: 10px;
+font-weight: bold;
+font-size: 20px;
+
+}
+button:hover {
+    transform: rotate(360deg);
+    transform: scale(1.11);
+    transition: ease 0.2s;
+    box-shadow:10px black ;
+  }
+  button:active {
+  
+    transform: translateY(4px);
+  }
